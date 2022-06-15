@@ -1,0 +1,49 @@
+
+
+
+.images-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem auto;
+}
+
+.image {
+  position: absolute;
+  perspective: 1000px;
+  width: 220px;
+  height: 100%;
+  perspective: 100px;
+  left: 20%;
+}
+
+.image .slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url('img/img.jpg');
+  background-size: cover;
+  box-shadow: -5px 5px 10px rgba(0, 0, 0, .3);
+}
+
+.image .slide-left {
+  height: 100%;
+  width: 20%;
+  transform-origin: 0 50%;
+  transform: rotateY(-60deg) translateX(-100%);
+  filter: brightness(40%);
+  width: 1000px;
+  background-position: 20% 0;
+}
+
+.image .slide-main {
+  height: 100%;
+  width: 100%;
+  opacity: .4;
+  transform: rotateY(30deg);
+  transform-origin: 0 50%;
+  background-position: 50% 0;
+}
