@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <main>
+        <div class="content">
+            <div class="sample"> 
+                <div class="wrapper">
+                    <div class="place" id="sample-place">
+                        <p class="background-text">Touch!</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="results">
+                <div class="wrapper">
+                    <div class="place" id="place">
+                        <p class="background-text">Touch!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>   
+
+    <script type="text/javascript">
+        document.addEventListener("DOMContentLoaded", function() {
+            function sample() {
+                const place = document.getElementById('sample-place');
+                const apple = '🍏';
+
+                function addApple(event) {
+                    const target = this.getBoundingClientRect();
+                    
+                    const span = document.createElement('span');
+                    span.innerHTML = apple;
+                    place.appendChild(span);
+
+                    const x = event.clientX - target.left - (span.offsetWidth / 2) + 'px';
+                    const y = event.clientY - target.top - (span.offsetHeight / 2)  + 'px';
+
+                    span.style.position = 'absolute';
+                    span.style.left = x;
+                    span.style.top = y;
+                }
+
+                place.addEventListener('click', addApple);
+            }
+
+            sample()
+            
+        });
+    </script>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>

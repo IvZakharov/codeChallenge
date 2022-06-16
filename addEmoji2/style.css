@@ -1,0 +1,73 @@
+body {
+  background: #1D1F20;
+  padding: 20px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+li {
+  padding: 0;
+  margin: 0;
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+}
+
+.sample {
+  border: 2px solid #fff;
+  height: 300px;
+  margin-bottom: 60px;
+}
+
+.results {
+  border: 2px solid #fff;
+  height: 300px;
+
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: linear-gradient(to bottom, #b7eaff 0%,#94dfff 100%);
+}
+
+/* ================================================================= */
+/* Styles for challenge */
+
+.place {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+span {
+  display: block;
+  font-size: 2rem;
+}
+
+.background-text {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: #90b3c3;
+  font-weight: 700;
+  text-transform: uppercase;
+  opacity: .3;
+  font-size: 4rem;
+}
+
+.opacity {
+  opacity: .3;
+}

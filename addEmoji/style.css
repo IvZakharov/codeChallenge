@@ -1,0 +1,57 @@
+body {
+  background: #1D1F20;
+  padding: 20px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+li {
+  padding: 0;
+  margin: 0;
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+}
+
+.sample {
+  border: 2px solid #fff;
+  height: 300px;
+  margin-bottom: 60px;
+}
+
+.results {
+  border: 2px solid #fff;
+  height: 300px;
+
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: url('img/stars.svg'), radial-gradient(70.99% 84.22% at 80.89% 12.01%, #890048 0%, #540048 50.56%, #000027 100%);
+}
+
+.place {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+span {
+  display: block;
+  padding: 10px;
+  font-size: 2rem;
+}
