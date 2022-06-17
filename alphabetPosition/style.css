@@ -25,43 +25,31 @@ li {
 
 .sample {
   border: 2px solid #fff;
-  height: 300px;
+  height: 250px;
   margin-bottom: 60px;
 }
 
 .results {
   border: 2px solid #fff;
-  height: 300px;
-
+  height: 250px;
 }
 
 .wrapper {
   width: 100%;
   height: 100%;
-  overflow: hidden;
-  background: linear-gradient(to bottom, #b7eaff 0%,#94dfff 100%);
-}
-
-
-.place {
-  width: 100%;
-  height: 100%;
+  padding: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
+  flex-direction: column;
 }
 
-span {
+.text {
   display: block;
-  font-size: 2rem;
-}
-
-.background-text {
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  color: #90b3c3;
-  font-weight: 700;
-  text-transform: uppercase;
-  opacity: .3;
-  font-size: 4rem;
+  padding: 10px 30px;
+  margin: 0;
+  text-align: center;
+  background-color: #F0F0F0;
+  border-radius: 30px;
+  font-size: 1.5rem;
 }

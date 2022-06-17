@@ -39,27 +39,30 @@ li {
   width: 100%;
   height: 100%;
   overflow: hidden;
-  background: linear-gradient(to bottom, #b7eaff 0%,#94dfff 100%);
+  background: url('img/stars.svg'), radial-gradient(70.99% 84.22% at 80.89% 12.01%, #890048 0%, #540048 50.56%, #000027 100%);
 }
 
+/* ================================================================= */
+/* Styles for challenge */
 
 .place {
   width: 100%;
   height: 100%;
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
 }
 
 span {
   display: block;
   font-size: 2rem;
+  transition: all .5s ease-in;
 }
 
 .background-text {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  color: #90b3c3;
+  color: #762f58;
   font-weight: 700;
   text-transform: uppercase;
   opacity: .3;

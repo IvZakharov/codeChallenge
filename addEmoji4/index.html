@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <main>
+        <div class="content">
+            <div class="sample"> 
+                <div class="wrapper">
+                    <div class="place" id="sample-place">
+                        <p class="background-text">Touch!</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="results">
+                <div class="wrapper">
+                    <div class="place" id="place">
+                        <p class="background-text">Touch!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>   
+
+    <script type="text/javascript">
+        document.addEventListener("DOMContentLoaded", function() {
+            function sample() {
+                const place = document.getElementById('sample-place');
+                const characters = ['👻', '👾', '👽', '🤖', '👹', '😈'];
+
+                function addRandomCharacters(event) {
+                    const target = this.getBoundingClientRect();
+                    
+                    let randomInt = Math.floor( Math.random() * ((characters.length - 1) - 0 + 1) - 0 );
+                    let randomScale = Math.random() * (2 - 0.5) + 0.5;
+                    let randomRotate = Math.floor( Math.random() * (180 - 10) + 10 );
+
+                    const span = document.createElement('span');
+                    span.innerHTML = characters[randomInt];
+                    place.appendChild(span);
+
+                    let x = event.clientX - target.left - (span.offsetWidth / 2) + 'px';
+                    let y = event.clientY - target.top - (span.offsetHeight / 2)  + 'px';
+                    
+                    span.style.position = 'absolute';
+                    span.style.left = x;
+                    span.style.top = y;
+                    span.style.transform = (`scale(${randomScale}) rotate(${randomRotate + 'deg'})`);
+                }
+
+                place.addEventListener('click', addRandomCharacters);
+            }
+
+            sample()
+            
+        });
+    </script>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>

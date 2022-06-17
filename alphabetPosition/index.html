@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <main>
+        <div class="content">
+            <div class="sample"> 
+                <div class="wrapper">
+                    <div class="place" id="sample-place">
+                        
+                    </div>
+                </div>
+            </div>
+    
+            <div class="results">
+                <div class="wrapper">
+                    <div class="place" id="place">
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>   
+
+    <script type="text/javascript">
+        document.addEventListener("DOMContentLoaded", function() {
+            function sample() {
+                const place = document.getElementById('sample-place');
+                const characters = ['👻', '👾', '👽', '🤖', '👹', '😈'];
+                let interval = 300;
+                let counter = 0;
+
+                let addRandomCharacters = setInterval(function(){ 
+                    
+                    let placeWidth = place.clientWidth;
+
+                    let randomX = Math.floor( Math.random() * (placeWidth - 1) + 1 );
+                    let randomY = Math.floor( Math.random() * (300 - 1) + 1 );
+                    
+                    const span = document.createElement('span');
+                    span.innerHTML = characters[counter];
+                    place.appendChild(span);
+                    
+                    span.style.position = 'absolute';
+                    span.style.left = randomX + "px";
+                    span.style.top = randomY + "px";
+
+                    counter++;
+                    if(counter === characters.length) {
+                        counter = 0;
+                    }
+
+                }, interval);
+
+            }
+
+            sample()
+            
+        });
+    </script>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
