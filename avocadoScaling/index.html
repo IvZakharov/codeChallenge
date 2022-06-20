@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <main>
+        <div class="content">
+            <div class="sample"> 
+                <div class="wrapper">
+                    <img class="avocado" id="sample-avocado" src="img/Avocado.svg" width="30" height="30" alt="avocado icon">
+                </div>
+            </div>
+    
+            <div class="results">
+                <div class="wrapper">
+                    <img class="avocado" id="avocado" src="img/Avocado.svg" width="30" height="30" alt="avocado icon">
+                </div>
+            </div>
+        </div>
+    </main>   
+
+    <script type="text/javascript">
+        document.addEventListener("DOMContentLoaded", function() {
+            function sample() {
+                const avocado = document.getElementById("sample-avocado");
+
+                let scale = 1;
+                let counter = 0;
+
+                let sampleAvocadoScaling = setInterval(function(){
+                    
+                    scale += 0.5;
+                    avocado.style.transform = `scale(${scale})`;
+
+                    counter++;
+                    if(counter === 15) {
+                        clearInterval(sampleAvocadoScaling);
+                    }
+
+                }, 1000);
+            }
+
+            sample()
+            
+        });
+    </script>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>

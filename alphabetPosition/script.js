@@ -1,29 +1,20 @@
-const place = document.getElementById('place');
-const characters = ['👻', '👾', '👽', '🤖', '👹', '😈'];
-let interval = 300;
-let counter = 0;
+const alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
+const string = "The adventure first";
 
-let addRandomCharacters = setInterval(function(){ 
-    
-    let placeWidth = place.clientWidth;
-    placeWidth += 1000;
+let alphabetPosition = (str) => {
+    let array = str.replace(/[^a-zA-Z]/g, '').toLowerCase().split('');
+    let returnArray = [];
 
-    let randomX = Math.floor( Math.random() * (placeWidth - 1) + 1 );
-    let randomY = Math.floor( Math.random() * (300 - 1) + 1 );
-    
-    const span = document.createElement('span');
-    span.innerHTML = characters[counter];
-    place.appendChild(span);
-    
-    span.style.position = 'absolute';
-    span.style.position = 'relative';
-    span.style.left = randomX + "px";
-    span.style.top = randomY + "px";
+    array.forEach(elem => {
+        let position = alphabet.findIndex(i => i == elem);
+        position += ' ';
+        returnArray.push(position + 1);
+        returnArray.push(elem);
+    })
 
-    counter++;
+    return string
+    return returnArray.join(' ')
+};
 
-    if(counter === characters.length) {
-        counter = 0;
-    }
-
-}, interval);
+const text = document.getElementById('text');
+text.innerHTML = alphabetPosition(string);

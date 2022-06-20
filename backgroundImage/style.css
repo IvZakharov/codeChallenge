@@ -1,0 +1,51 @@
+/* Styles for challenge */
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.image {
+  width: 100px;
+  height: 100px;
+  background-color: #FFDFBD;
+  background-repeat: no-repeat;
+  background-image: url('img/image.png');
+}
+
+.image-1 {
+  /* background-size: cover; */
+  /* background-size: contain; */
+  /* background-position: 0 0; */
+  /* background-position: 50% 50%; */
+  /* background-position: 0 100%; */
+  /* background-position: 100% 0; */
+}
+
+.image-2 {
+  /* background-size: cover; */
+  /* background-size: contain; */
+  /* background-position: 0 0; */
+  /* background-position: 50% 50%; */
+  /* background-position: 0 100%; */
+  /* background-position: 100% 0; */
+}
+
+.image-3 {
+  /* background-size: cover; */
+  /* background-size: contain; */
+  /* background-position: 0 0; */
+  /* background-position: 50% 50%; */
+  /* background-position: 0 100%; */
+  /* background-position: 100% 0; */
+}
+
+.image-4 {
+  /* background-size: cover; */
+  /* background-size: contain; */
+  /* background-position: 0 0; */
+  /* background-position: 50% 50%; */
+  /* background-position: 0 100%; */
+  /* background-position: 100% 0; */
+}
