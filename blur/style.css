@@ -1,0 +1,21 @@
+
+.image-wrapper {
+  position: absolute;
+  z-index: -1;
+  filter: blur(1rem);
+  transform: scale(
+                  .5
+                  5,
+                  1000,
+                  0.001
+              );
+}
+
+.blured {
+  transform: scale(
+                  .5,
+                  5,
+                  0.001,
+                  1000
+              );
+}

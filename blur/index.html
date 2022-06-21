@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blur</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+      body {
+  background: #1D1F20;
+  padding: 20px;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+li {
+  padding: 0;
+  margin: 0;
+}
+
+button {
+  background: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+}
+
+.sample {
+  border: 2px solid #fff;
+  height: 300px;
+  margin-bottom: 60px;
+}
+
+.results {
+  border: 2px solid #fff;
+  height: 300px;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: auto;
+}
+
+.sample-image-wrapper {
+  position: absolute;
+  z-index: -1;
+  filter: blur(1rem);
+  transform: scale(
+                  4,
+                  0.001
+              );
+}
+
+.sample-blured {
+  transform: scale(
+                  .5,
+                  1000
+              );
+}
+
+
+    </style>
+</head>
+<body>
+    <main>
+        <div class="content">
+            <div class="sample"> 
+                <div class="wrapper">
+                    <div class="sample-image-wrapper">
+                        <img class="sample-blured" src="img/Charizard.svg" alt="">
+                    </div>
+
+                    <img src="img/Charizard.svg" alt=""> 
+                </div>
+            </div>
+            
+            <div class="results">
+                <div class="wrapper">
+                    <div class="image-wrapper">
+                        <img class="blured" src="img/Charizard.svg" alt="">
+                    
+                    </div>
+
+                    <img src="img/Charizard.svg" alt="">                        
+                </div>
+            </div>
+        </div>
+    </main>   
+</body>
+</html>

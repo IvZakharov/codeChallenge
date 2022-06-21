@@ -1,0 +1,26 @@
+.button {
+  background-color: #36382E;
+  color: #fff;
+  font-size: 1.5rem;
+  border: none;
+  text-transform: uppercase;
+  padding: 20px 60px;
+  box-shadow: 
+              0 24px 0 8px tomato,
+              0 40px 0 -16px deepskyblue,
+              0 40px 0 16px deepskyblue,
+              0 -24px 0 -8px deepskyblue,
+              0 -40px 0 -16px tomato,
+              0 -24px 0 8px deepskyblue,
+              0 -40px 0 16px tomato,
+              0 24px 0 -8px tomato,
+              18px 0 0 -8px tomato,
+              18px 0 8px -8px tomato,
+              32px 0 16px -16px deepskyblue,
+              32px 0 0 -16px deepskyblue,
+              -32px 0 0 -16px tomato,
+              -18px 0 0 -8px deepskyblue,
+              -18px 0 0 8px deepskyblue,
+              -32px 0 0 -16px tomato
+          ;   
+}

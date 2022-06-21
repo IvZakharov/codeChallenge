@@ -1,0 +1,34 @@
+
+.emoji {
+  position: relative;
+}
+
+.emoji:before,
+.emoji:after {
+  content: '';
+  display: none;
+  position: absolute;
+  width: 30px;
+  height: 5px;
+  border-radius: 30px;
+  background-color: #945706;
+}
+
+.emoji:before {
+  /* top: 30px; */
+  /* left: 39px; */
+  /* top: 40px; */
+  /* left: 29px; */
+  /* transform: rotate(30deg); */
+  /* transform: rotate(-30deg); */
+}
+
+.emoji:after {
+  /* top: 30px; */
+  /* right: 37px; */
+  /* top: 30px; */
+  /* right: 27px; */
+  /* top: 20px; */
+  /* transform: rotate(-30deg); */
+  /* transform: rotate(30deg); */
+}
