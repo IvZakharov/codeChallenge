@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div class="content">
+            <div class="sample"> 
+                <div class="wrapper">
+                    <div class="canvas-wrapper">
+                        <canvas id="sample-canvas" width="220" height="140"></canvas>
+                        <span class="arrow-top"></span>
+                        <span class="arrow-right"></span>
+                        <span class="bg-line bg-line-1"></span>
+                        <span class="bg-line bg-line-2"></span>
+                        <span class="bg-line bg-line-3"></span>
+                        <span class="bg-line bg-line-4"></span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="results">
+                <div class="wrapper">
+                    <div class="canvas-wrapper">
+                        <canvas id="canvas" width="220" height="140"></canvas>
+                        <span class="arrow-top"></span>
+                        <span class="arrow-right"></span>
+                        <span class="bg-line bg-line-1"></span>
+                        <span class="bg-line bg-line-2"></span>
+                        <span class="bg-line bg-line-3"></span>
+                        <span class="bg-line bg-line-4"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>   
+
+    <script type="text/javascript" src="script.js"></script>
+    <script>
+
+        document.addEventListener("DOMContentLoaded", function() {
+
+            const sampleCanvas = document.getElementById('sample-canvas');
+            let ctxr = sampleCanvas.getContext('2d');
+
+            // Первый путь
+            ctxr.beginPath();
+            ctxr.lineWidth = 3;
+            ctxr.strokeStyle = 'blue';
+            ctxr.moveTo(0, 125);
+            ctxr.lineTo(35, 105);
+            ctxr.lineTo(75, 120);
+            ctxr.lineTo(105, 65);
+            ctxr.lineTo(120, 80);
+            ctxr.lineTo(135, 70);
+            ctxr.lineTo(160, 100);
+            ctxr.lineTo(200, 50);
+            ctxr.lineTo(240, 100);
+            ctxr.stroke();
+
+            // Второй путь
+            ctxr.beginPath();
+            ctxr.strokeStyle = 'green';
+            ctxr.moveTo(0, 60);
+            ctxr.lineTo(40, 90);
+            ctxr.lineTo(60, 120);
+            ctxr.lineTo(90, 85);
+            ctxr.lineTo(130, 125);
+            ctxr.lineTo(150, 90);
+            ctxr.lineTo(180, 120);
+            ctxr.lineTo(240, 140);
+            ctxr.stroke();
+        });
+
+    </script>
+</body>
+</html>
