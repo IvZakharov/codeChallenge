@@ -1,0 +1,35 @@
+
+.clip-path {
+  width: 140px;
+  height: 140px;
+  margin: 2px;
+  background-image: url('img/img.jpg');
+  background-size: cover;
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+
+.clip-top {
+  transform: translateY(72px);
+  transform: translateY(-72px);
+  background-position: top;
+}
+
+.clip-right {
+  background-position: right;
+}
+
+.clip-bottom {
+  transform: translateY(72px);
+  transform: translateY(-72px);
+  background-position: bottom;
+}
+
+.clip-left {
+  background-position: left;
+}
+
+
+
+
+
+
