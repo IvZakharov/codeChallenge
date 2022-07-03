@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div class="content">
+            <div class="sample"> 
+                <div class="wrapper">
+                   <div class="counter">
+                        <button class="button" id="sample-minus" disabled>
+                           <img src="img/minus.svg" alt="minus">
+                        </button>
+                        <span class="count" id="sample-count">1</span>
+                        <button class="button" id="sample-plus">
+                            <img src="img/plus.svg" alt="plus">
+                        </button>
+                   </div>
+                </div>
+            </div>
+            <div class="results">
+                <div class="wrapper">
+                    <div class="counter">
+                        <button class="button" id="minus" disabled>
+                           <img src="img/minus.svg" alt="minus">
+                        </button>
+                        <span class="count" id="count">1</span>
+                        <button class="button" id="plus">
+                            <img src="img/plus.svg" alt="plus">
+                        </button>
+                   </div>
+                </div>
+            </div>
+        </div>
+    </main>   
+    <script type="text/javascript">
+        document.addEventListener("DOMContentLoaded", function() {
+            const minusButton = document.getElementById('sample-minus');
+            const plusButton = document.getElementById('sample-plus');
+            const count = document.getElementById('sample-count');
+
+            let incrementCounter = () => {
+                let countValue = +count.innerHTML;
+                countValue += 1;
+                count.innerHTML = countValue;
+                checkCokunter();
+            }
+
+            let lowerCounter = () => {
+                let countValue = +count.innerHTML;
+                countValue -= 1;
+                count.innerHTML = countValue;
+                checkCokunter();    
+            }
+
+            let checkCokunter = () => {
+                if (+count.innerHTML > 1) {
+                    minusButton.removeAttribute('disabled', 'disabled');
+                } else {
+                    minusButton.setAttribute('disabled', 'disabled');
+                }
+            }
+
+            plusButton.addEventListener('click', incrementCounter);
+            minusButton.addEventListener('click', lowerCounter);
+        });
+    </script>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>

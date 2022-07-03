@@ -1,0 +1,494 @@
+body {
+    background: #1D1F20;
+    padding: 20px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+li {
+    padding: 0;
+    margin: 0;
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+}
+
+.sample {
+    height: 300px;
+    margin-bottom: 60px;
+}
+
+.results {
+    height: 300px;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+    border: 2px solid #fff;
+    max-width: 350px;
+    margin: 0 auto;
+}
+
+.sample-day-night {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.sample-sky {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    background-color: skyblue;
+    z-index: 8;
+    animation: sample-sky 10s linear infinite;
+}
+
+.sample-sun-moon-wrapper {
+    position: absolute;
+    top: 220px;
+    right: -150px;
+    z-index: 10;
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    animation: sample-change-sun-moon 10s linear infinite;
+}
+
+.sample-sun {
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    background-color: lemonchiffon;
+    box-shadow: 0px 0px 30px lemonchiffon;
+}
+
+.sample-moon {
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    background-color: #fff;
+    box-shadow: 0px 0px 30px #fff;
+}
+
+.sample-wind {
+    position: absolute;
+    top: 80px;
+    left: -200px;
+    width: 100px;
+    height: 2px;
+    z-index: 11;
+    background-color: #fff;
+    border-radius: 40px;
+    animation: sample-wind 8s ease-in-out infinite;
+    
+}
+
+.sample-wind:before {
+    content: '';
+    position: absolute;
+    bottom: 20px;
+    left: 80px;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+}
+
+.sample-wind:after {
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: 50px;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+}
+
+.sample-mountains {
+    background-image: url('img/mountains.svg');
+    background-repeat: repeat-x;
+    width: 200%;
+    height: 180px;
+    position: absolute;
+    bottom: 0;
+    z-index: 10;
+}
+
+.sample-clouds {
+    position: absolute;
+    z-index: 11;
+}
+
+.sample-cloud-1 {
+    transform: scale(1.8);
+    animation-name: clouds, sample-clouds-appearance;
+    animation-timing-function: linear, linear;
+    animation-duration: 20s, 10s;
+    animation-iteration-count: infinite, infinite;
+}
+
+.sample-cloud-2 {
+    transform: scale(1);
+    animation-name: clouds, sample-clouds-appearance;
+    animation-timing-function: linear, linear;
+    animation-duration: 10s, 10s;
+    animation-iteration-count: infinite, infinite;
+}
+
+.sample-cloud-3 {
+    transform: scale(1.5);
+    animation-name: clouds, sample-clouds-appearance;
+    animation-timing-function: linear, linear;
+    animation-duration: 15s, 10s;
+    animation-iteration-count: infinite, infinite;
+}
+
+.sample-stars {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9;
+    background-image: url('img/stars.svg');
+    background-size: cover;
+    animation: sample-stars 10s linear infinite;
+    opacity: 0;
+}
+
+@keyframes sample-sky {
+    40% {
+        background-color: skyblue;
+    }
+
+    50% {
+        background-color: #212d38;
+    }
+
+    90% {
+        background-color: #212d38;
+    }
+
+    100% {
+        background-color: skyblue;
+    }
+}
+
+@keyframes sample-sun-moon {
+    40% {
+        background-color: lemonchiffon;
+        box-shadow: 0px 0px 30px lemonchiffon;
+    }
+
+    50% {
+        background-color: #fff;
+        box-shadow: 0px 0px 30px #fff;
+    }
+
+    90% {
+        background-color: #fff;
+        box-shadow: 0px 0px 30px #fff;
+    }
+
+    100% {
+        background-color: lemonchiffon;
+        box-shadow: 0px 0px 30px lemonchiffon;
+    }
+}
+
+@keyframes sample-clouds {   
+
+    100% {
+        transform: translateX(600px);
+    }
+}
+
+@keyframes sample-clouds-appearance {
+    40% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: .3;
+    }
+
+    90% {
+        opacity: .3;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes sample-stars {
+    40% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    90% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes sample-wind {
+
+    50% {
+        transform: translateX(0) 
+    }
+
+    100% { 
+        transform: translateX(600px) 
+    }
+}
+
+@keyframes sample-change-sun-moon {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* ================================================================= */
+/* Styles for challenge */
+
+.day-night {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.sky {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    background-color: skyblue;
+    z-index: 8;
+    animation: sky 10s linear infinite;
+}
+
+.mountains {
+    background-image: url('img/mountains.svg');
+    background-repeat: repeat-x;
+    width: 200%;
+    height: 180px;
+    position: absolute;
+    bottom: 0;
+    z-index: 10;
+}
+
+.clouds {
+    position: absolute;
+    z-index: 11;
+}
+
+.cloud-1 {
+    transform: scale(1.8);
+    animation-name: clouds, clouds-appearance;
+    animation-timing-function: linear, linear;
+    animation-duration: 20s, 10s;
+    animation-iteration-count: infinite, infinite;
+}
+
+.cloud-2 {
+    transform: scale(1);
+    animation-name: clouds, clouds-appearance;
+    animation-timing-function: linear, linear;
+    animation-duration: 10s, 10s;
+    animation-iteration-count: infinite, infinite;
+}
+
+.cloud-3 {
+    transform: scale(1.5);
+    animation-name: clouds, clouds-appearance;
+    animation-timing-function: linear, linear;
+    animation-duration: 15s, 10s;
+    animation-iteration-count: infinite, infinite;
+}
+
+.stars {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9;
+    background-image: url('img/stars.svg');
+    background-size: cover;
+    animation: stars 10s linear infinite;
+    opacity: 0;
+}
+
+.sun-moon-wrapper {
+    position: absolute;
+    top: 220px;
+    right: -150px;
+    z-index: 10;
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    animation: change-sun-moon 10s linear infinite;
+}
+
+.sun {
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    background-color: lemonchiffon;
+    box-shadow: 0px 0px 30px lemonchiffon;
+}
+
+.moon {
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    background-color: #fff;
+    box-shadow: 0px 0px 30px #fff;
+}
+
+.wind {
+    position: absolute;
+    top: 80px;
+    left: -200px;
+    width: 100px;
+    height: 2px;
+    z-index: 11;
+    background-color: #fff;
+    border-radius: 40px;
+    animation: wind 8s ease-in-out infinite;
+    
+}
+
+.wind:before {
+    content: '';
+    position: absolute;
+    bottom: 20px;
+    left: 80px;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+}
+
+.wind:after {
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: 50px;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+}
+
+@keyframes sky {
+
+    40% {
+        background-color: skyblue;
+    }
+
+    50% {
+        background-color: #212d38;
+    }
+
+    90% {
+        background-color: #212d38;
+    }
+
+    100% {
+        background-color: skyblue;
+    }
+}
+
+@keyframes sun-moon {
+    
+}
+
+@keyframes clouds {   
+    100% { transform: translateX(600px) }
+}
+
+@keyframes stars {
+    40% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    90% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes clouds-appearance {
+    40% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: .3;
+    }
+
+    90% {
+        opacity: .3;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes wind {
+
+    50% {
+        transform: translateX(600px) 
+    }
+
+    80% {
+        transform: translateX(-200px) 
+    }
+    
+    100% { 
+        transform: translateX(600px) 
+    }
+}
+
+@keyframes change-sun-moon {
+    50% {
+        transform: rotate(-360deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
