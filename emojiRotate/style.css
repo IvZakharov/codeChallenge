@@ -1,0 +1,39 @@
+.emoji {
+    
+    animation-name: emoji;
+    animation-timing-function: ease-out;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes emoji {
+    0% {
+        transform: rotate(0deg);
+        transform: rotate(40deg);
+    }
+
+    25% {
+        transform: rotate(-200deg);
+        transform: rotate(240deg);
+    }
+
+    40% {
+        transform: rotate(-160deg);
+        transform: rotate(340deg);
+    }
+
+    55% {
+        transform: rotate(-200deg);
+        transform: rotate(10deg);
+    }
+
+    70% {
+        transform: rotate(-160deg);
+        transform: rotate(280deg);
+    }
+
+    100% {
+        transform: rotate(-360deg); 
+        transform: rotate(50deg);
+    }
+}

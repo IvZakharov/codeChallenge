@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emoji Rotate</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>body {
+        background: #1D1F20;
+        padding: 20px;
+    }
+    
+    * {
+        box-sizing: border-box;
+    }
+    
+    ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+    
+    li {
+        padding: 0;
+        margin: 0;
+    }
+    
+    .content {
+        width: 100%;
+        height: 100%
+    }
+    
+    .sample {
+        border: 2px solid #fff;
+        height: 250px;
+        margin-bottom: 60px;
+    }
+    
+    .results {
+        border: 2px solid #fff;
+        height: 250px;
+    
+    }
+    
+    .wrapper {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    .sample-emoji {
+        animation-name: sample-emoji;
+        animation-timing-function: ease-out;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+    }
+    
+    @keyframes sample-emoji {
+        0% {
+            transform: rotate(0deg);
+        }
+    
+        25% {
+            transform: rotate(-200deg);
+        }
+    
+        40% {
+            transform: rotate(-160deg);
+        }
+    
+        55% {
+            transform: rotate(-200deg);
+        }
+    
+        70% {
+            transform: rotate(-160deg);
+        }
+    
+        100% {
+            transform: rotate(-360deg); 
+        }
+    }</style>
+</head>
+<body>
+    <main>
+        <div class="content">
+            <div class="sample"> 
+                <div class="wrapper">
+                    <div class="sample-emoji">
+                        <svg width="148" height="148" viewBox="0 0 148 148" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="74" cy="74" r="74" fill="url(#paint0_radial_11_3)"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M104.605 98.7479C105.263 97.8116 103.964 97.0091 103.095 97.7531C96.5477 103.358 85.9543 107 74 107C62.0457 107 51.4524 103.358 44.905 97.7533C44.0358 97.0092 42.7371 97.8117 43.3946 98.7481C48.9029 106.592 60.5377 112 74 112C87.4623 112 99.0973 106.592 104.605 98.7479Z" fill="url(#paint1_radial_11_3)"/>
+                            <ellipse cx="95" cy="61" rx="8" ry="11" fill="url(#paint2_radial_11_3)"/>
+                            <ellipse cx="53" cy="61" rx="8" ry="11" fill="url(#paint3_radial_11_3)"/>
+                            <defs>
+                            <radialGradient id="paint0_radial_11_3" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(74 55) rotate(90) scale(98.5374 97.8716)">
+                            <stop offset="0.354167" stop-color="#FFEF5E"/>
+                            <stop offset="0.911458" stop-color="#FF8C13"/>
+                            <stop offset="0.994792" stop-color="#EB5500"/>
+                            </radialGradient>
+                            <radialGradient id="paint1_radial_11_3" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(73.9999 93.797) rotate(90) scale(27.3566 37.7077)">
+                            <stop stop-color="#A66707"/>
+                            <stop offset="1" stop-color="#945706"/>
+                            </radialGradient>
+                            <radialGradient id="paint2_radial_11_3" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(95 61) rotate(90) scale(11 8)">
+                            <stop stop-color="#A66707"/>
+                            <stop offset="1" stop-color="#945706"/>
+                            </radialGradient>
+                            <radialGradient id="paint3_radial_11_3" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(53 61) rotate(90) scale(11 8)">
+                            <stop stop-color="#A66707"/>
+                            <stop offset="1" stop-color="#945706"/>
+                            </radialGradient>
+                            </defs>
+                        </svg>  
+                    </div>
+                </div>
+            </div>
+    
+            <div class="results">
+                <div class="wrapper">
+                    <div class="emoji">
+                        <svg width="148" height="148" viewBox="0 0 148 148" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="74" cy="74" r="74" fill="url(#paint0_radial_11_3)"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M104.605 98.7479C105.263 97.8116 103.964 97.0091 103.095 97.7531C96.5477 103.358 85.9543 107 74 107C62.0457 107 51.4524 103.358 44.905 97.7533C44.0358 97.0092 42.7371 97.8117 43.3946 98.7481C48.9029 106.592 60.5377 112 74 112C87.4623 112 99.0973 106.592 104.605 98.7479Z" fill="url(#paint1_radial_11_3)"/>
+                            <ellipse cx="95" cy="61" rx="8" ry="11" fill="url(#paint2_radial_11_3)"/>
+                            <ellipse cx="53" cy="61" rx="8" ry="11" fill="url(#paint3_radial_11_3)"/>
+                            <defs>
+                            <radialGradient id="paint0_radial_11_3" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(74 55) rotate(90) scale(98.5374 97.8716)">
+                            <stop offset="0.354167" stop-color="#FFEF5E"/>
+                            <stop offset="0.911458" stop-color="#FF8C13"/>
+                            <stop offset="0.994792" stop-color="#EB5500"/>
+                            </radialGradient>
+                            <radialGradient id="paint1_radial_11_3" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(73.9999 93.797) rotate(90) scale(27.3566 37.7077)">
+                            <stop stop-color="#A66707"/>
+                            <stop offset="1" stop-color="#945706"/>
+                            </radialGradient>
+                            <radialGradient id="paint2_radial_11_3" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(95 61) rotate(90) scale(11 8)">
+                            <stop stop-color="#A66707"/>
+                            <stop offset="1" stop-color="#945706"/>
+                            </radialGradient>
+                            <radialGradient id="paint3_radial_11_3" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(53 61) rotate(90) scale(11 8)">
+                            <stop stop-color="#A66707"/>
+                            <stop offset="1" stop-color="#945706"/>
+                            </radialGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>   
+
+</body>
+</html>

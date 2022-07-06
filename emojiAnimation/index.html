@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array plus array</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div class="content">
+            <div class="sample"> 
+                <div class="wrapper">
+                    <div class="emoji-animation">
+                        <p class="emoji" id="sample-emoji"></p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="results">
+                <div class="wrapper">
+                    <div class="emoji-animation">
+                        <p class="emoji" id="emoji"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>   
+
+    <script type="text/javascript" src="script.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const emoji = document.getElementById('sample-emoji');
+            let emojiArray = ['🌑', '🌒', '🌔', '🌕', '🌖', '🌗', '🌘'];
+
+            function loop(i) {
+                let emojiLength = emojiArray.length;
+
+                if (i == emojiLength) { i = 0 };
+
+                setTimeout(() => {
+                    i++;
+                    loop(i);
+                }, 300);
+
+                emoji.innerHTML = emojiArray[i];
+            };
+
+            loop(0);
+        });
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,5 @@
+.image {
+    
+    filter: drop-shadow(0 0 5px cyan) drop-shadow(0 0 10px fuchsia);
+    box-shadow: 0 0 10px 0 fuchsia;
+}
