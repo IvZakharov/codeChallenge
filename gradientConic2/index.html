@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conic gradient 2</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        body {
+    background: #1D1F20;
+    padding: 20px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+li {
+    padding: 0;
+    margin: 0;
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+}
+
+.sample {
+    border: 2px solid #fff;
+    height: 280px;
+    margin-bottom: 60px;
+}
+
+.results {
+    border: 2px solid #fff;
+    height: 280px;
+
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    background-color: #fff;
+}
+
+    </style>
+</head>
+<body>
+    <main>
+        <div class="content">
+            <div class="sample"> 
+                <div class="wrapper">
+                    <div class="conic" style="border-radius: 100%; width: 250px; height: 250px; background: repeating-conic-gradient(#564592 0deg 10deg, #724CF9 10deg 30deg, #F896D8 30deg 40deg, #EDF67D 50deg 60deg);">
+                        
+                    </div>
+                </div>
+            </div>
+    
+            <div class="results">
+                <div class="wrapper">
+                    <div class="conic">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>   
+
+</body>
+</html>

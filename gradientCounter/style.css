@@ -1,0 +1,36 @@
+
+ul {
+    counter-reset: index;  
+    counter-increment: index;
+    max-width: 300px;
+    position: relative;
+}
+  
+li {
+    font-family: 'Roboto', sans-serif;
+    counter-increment: index;
+    counter-set: index;
+    display: flex;
+    align-items: center;
+    padding: 5px 0;
+    color: white;
+    box-sizing: border-box;
+    font-size: 1.25rem;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+  
+li:last-child {
+    border-bottom: none;
+}
+  
+li::before {
+    content: counters(index, ".", decimal-leading-zero);
+    font-size: 2rem;
+    margin-right: 5px;
+    text-align: center;
+    font-weight: 900;
+    padding: 10px;
+    background: linear-gradient(to right, #a8c0ff, #3f2b96);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

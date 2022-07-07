@@ -1,0 +1,37 @@
+.radial {
+    width: 280px;
+    height: 250px;
+    background: radial-gradient(
+                                /* circle farthest-corner at 100% 100%, */
+                                /* circle farthest-corner at 0% 100%, */
+                                /* circle farthest-corner at 0% 0%, */
+                                /* circle farthest-corner at 100% 100%, */
+
+                                /* Purple */
+                                #4f46ed,
+                                /* #4f46ed 20%, */
+                                /* #4f46ed 30%, */
+
+                                /* Blue */
+                                #00cdf6,
+                                /* #00cdf6 40%, */
+                                /* #00cdf6 50%, */
+
+                                /* Purple */
+                                #4f46ed,
+                                /* #4f46ed 50%, */
+                                /* #4f46ed 65%, */
+
+                                /* Blue */
+                                #00cdf6,
+                                /* #00cdf6 80%, */
+                                /* #00cdf6 90%,  */
+
+                                /* Purple */
+                                #4f46ed
+                                /* #4f46ed 90% */
+                                /* #4f46ed 100% */
+                                );
+}
+
+

@@ -1,0 +1,43 @@
+
+
+
+.emoji {
+    position: relative;
+    animation: pupil 2s linear infinite;
+}
+
+.eyes {
+    position: absolute;
+    display: block;
+    top: 30px;
+    left: 30px;
+    position: relative;
+    z-index: 10;
+    top: 0;
+}
+
+.pupil {
+   animation-name: pupil;
+   animation-timing-function: linear;
+   animation-duration: 3s;
+   animation-iteration-count: infinite;
+}
+
+
+@keyframes pupil {
+    0% {
+        transform: translateX(0)
+    }
+
+    33% {
+        transform: translateX(-5px)
+    }
+
+    66% {
+        transform: translateX(5px)
+    }
+
+    100% {
+        transform: translateX(0)
+    }
+}

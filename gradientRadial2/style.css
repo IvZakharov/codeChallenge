@@ -1,0 +1,43 @@
+.radial {
+    width: 280px;
+    height: 250px;
+
+    background:
+        radial-gradient(
+            /* #D4AFB9 20px, */
+            /* #7EC4CF 20px, */
+            /* #9CADCE 20px, */
+            transparent 0,
+            transparent 100%
+        ),
+        radial-gradient(
+            /* #7EC4CF 20px, */
+            /* #D4AFB9 20px, */
+            /* #9CADCE 20px, */
+            transparent 0,
+            transparent 100%
+        ),
+        radial-gradient(
+            /* #9CADCE 20px, */
+            /* #7EC4CF 20px, */
+            /* #D4AFB9 20px, */
+            transparent 0,
+            transparent 100%
+        ), #fff;
+
+        background-blend-mode: multiply;
+
+        /* background-size: 50px 50px; */
+        /* background-size: 100px 100px; */
+        /* background-size: 150px 150px; */
+
+        background-position: 
+                             /* 0 0, */
+                             /* 15px 15px, */
+                             /* 33px 33px, */
+                             /* 45px 45px, */
+                            /* -33px -33px; */
+                            /* -45px -45px; */
+}
+
+

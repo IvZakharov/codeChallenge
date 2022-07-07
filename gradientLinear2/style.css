@@ -1,0 +1,76 @@
+
+
+.linear {
+    width: 280px;
+    height: 250px;
+    background:
+                repeating-linear-gradient(
+                    /* -45deg, */
+                    /* 45deg, */
+                    /* 90deg, */
+                    /* 135deg, */
+
+                    transparent 0,
+                    transparent 20px,
+
+                     /* Green */
+                     /* #ABFF4F 0, */
+                     /* #ABFF4F 40px */
+
+                     /* Yellow */
+                     /* #FFB85C 0, */
+                     /* #FFB85C 40px */
+
+                     /* Red */
+                     /* #F5516D 0, */
+                     /* #F5516D 40px */
+                ),
+                repeating-linear-gradient(
+                        /* -45deg, */
+                        /* 45deg, */
+                        /* 90deg, */
+                        /* 135deg, */
+
+                        transparent 0,
+                        transparent 20px,
+
+                        /* Green */
+                        /* #ABFF4F 0, */
+                        /* #ABFF4F 40px */
+
+                        /* Yellow */
+                        /* #FFB85C 0, */
+                        /* #FFB85C 40px */
+
+                        /* Red */
+                        /* #F5516D 0, */
+                        /* #F5516D 40px */
+                    ),
+                    repeating-linear-gradient(
+                         /* -45deg, */
+                        /* 45deg, */
+                        /* 90deg, */
+                        /* 135deg, */
+
+                        transparent 0,
+                        transparent 20px,
+
+                        /* Green */
+                        /* #ABFF4F 0, */
+                        /* #ABFF4F 40px */
+
+                        /* Yellow */
+                        /* #FFB85C 0, */
+                        /* #FFB85C 40px */
+
+                        /* Red */
+                        /* #F5516D 0, */
+                        /* #F5516D 40px */
+                    ), #fff;
+                /* background-blend-mode: hard-light; */
+                /* background-blend-mode: multiply; */
+                /* background-blend-mode: difference; */
+                /* background-blend-mode: normal; */
+}
+
+

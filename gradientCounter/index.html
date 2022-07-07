@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zoom</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+    background: #1D1F20;
+    padding: 20px;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+li {
+    padding: 0;
+    margin: 0;
+}
+
+button {
+    background: transparent;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+}
+
+.sample {
+    border: 2px solid #fff;
+    height: 300px;
+    margin-bottom: 60px;
+}
+
+.results {
+    border: 2px solid #fff;
+    height: 300px;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    overflow: auto;
+}
+
+.sample-list {
+    counter-reset: index; 
+    counter-increment: none; 
+    max-width: 300px;
+    position: relative;
+}
+  
+.sample-list li {
+    font-family: 'Roboto', sans-serif;
+    counter-increment: index; 
+    counter-set: inherit;
+    display: flex;
+    align-items: center;
+    padding: 5px 0;
+    color: white;
+    box-sizing: border-box;
+    font-size: 1.25rem;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+  
+.sample-list li:last-child {
+    border-bottom: none;
+}
+  
+.sample-list li::before {
+    content: counters(index, ".", decimal-leading-zero);
+    font-size: 2rem;
+    margin-right: 5px;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+    font-variant-numeric: tabular-nums;
+    align-self: flex-start;
+    background: linear-gradient(to right, #a8c0ff, #3f2b96);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-position: center;
+}
+
+    </style>
+</head>
+<body>
+    <main>
+        <div class="content">
+            <div class="sample"> 
+                <div class="wrapper">
+                    <ul class="sample-list">
+                        <li>Lorem three three five</li>
+                        <li>Lorem three three five</li>
+                        <li>Lorem three three five</li>
+                        <li>Lorem three three five</li>
+                        <li>Lorem three three five</li>
+                        <li>Lorem three three five</li>
+                        <li>Lorem three three five</li>
+                        <li>Lorem three three five</li>
+                        <li>Lorem three three five</li>
+                        <li>Lorem three three five</li>
+                        <li>Lorem three three five</li>
+                        <li>Lorem three three five</li>
+                        <li>Lorem three three five</li>
+                        <li>Lorem three three five</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="results">
+                <div class="wrapper">
+                    <ul class="list">
+                        <li>Lorem three three five</li>
+                        <li>Lorem three three five</li>
+                        <li>Lorem three three five</li>
+                        <li>Lorem three three five</li>
+                        <li>Lorem three three five</li>
+                        <li>Lorem three three five</li>
+                        <li>Lorem three three five</li>
+                        <li>Lorem three three five</li>
+                        <li>Lorem three three five</li>
+                        <li>Lorem three three five</li>
+                        <li>Lorem three three five</li>
+                        <li>Lorem three three five</li>
+                        <li>Lorem three three five</li>
+                        <li>Lorem three three five</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>   
+</body>
+</html>

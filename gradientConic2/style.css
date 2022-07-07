@@ -1,0 +1,33 @@
+
+
+.conic {
+    width: 250px;
+    height: 250px; 
+    border-radius: 100%;
+    background: repeating-conic-gradient(
+                                        /* Purple */
+                                        /* #564592 0% 10%, */
+                                        /* #564592 0deg 10deg, */
+                                        /* #564592 10deg 20deg, */
+                                        /* #564592 10deg 30deg, */
+
+                                        /* Blue */
+                                        /* #724CF9 10% 20%,  */
+                                        /* #724CF9 10deg 20deg,   */
+                                        /* #724CF9 10deg 30deg, */
+                                        /* #724CF9 20deg 30deg,  */
+                                        
+                                        /* Pink */
+                                        /* #F896D8 20% 30%,  */
+                                        /* #F896D8 20deg 40deg,  */
+                                        /* #F896D8 20deg 50deg,  */
+                                        /* #F896D8 30deg 40deg, */
+
+                                        /* Yellow */
+                                        /* #EDF67D 20% 30% */
+                                        /* #EDF67D 40deg 50deg */
+                                        /* #EDF67D 50deg 60deg */
+                                        /* #EDF67D 50deg 70deg */
+                                        
+                                        );
+};

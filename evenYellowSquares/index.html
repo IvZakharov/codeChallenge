@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Even Yellow Squares</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        body {
+    background: #1D1F20;
+    padding: 20px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+li {
+    padding: 0;
+    margin: 0;
+}
+
+.content {
+    width: 100%;
+    height: 100%:
+}
+
+.sample {
+    border: 2px solid #fff;
+    height: 250px;
+    margin-bottom: 60px;
+}
+
+.results {
+    border: 2px solid #fff;
+    height: 250px;
+
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.sample-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+}
+
+
+.sample-squares {
+    background-color: #CE4F4F;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 1.25rem;
+    color: #fff;
+}
+
+.sample-squares:nth-child(2n) {
+    background-color: #CCCE4F !important;
+}
+
+    </style>
+</head>
+<body>
+    <main>
+        <div class="content">
+            <div class="sample"> 
+                <div class="wrapper">
+                    <ul class="sample-grid">
+                        <li class="sample-squares">1</li>
+                        <li class="sample-squares">2</li>
+                        <li class="sample-squares">3</li>
+                        <li class="sample-squares">4</li>
+                        <li class="sample-squares">5</li>
+                        <li class="sample-squares">6</li>
+                        <li class="sample-squares">7</li>
+                        <li class="sample-squares">8</li>
+                        <li class="sample-squares">9</li>
+                    </ul>
+                </div>
+            </div>
+    
+            <div class="results">
+                <div class="wrapper">
+                    <ul class="grid">
+                        <li class="squares">1</li>
+                        <li class="squares">2</li>
+                        <li class="squares">3</li>
+                        <li class="squares">4</li>
+                        <li class="squares">5</li>
+                        <li class="squares">6</li>
+                        <li class="squares">7</li>
+                        <li class="squares">8</li>
+                        <li class="squares">9</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>   
+
+</body>
+</html>
